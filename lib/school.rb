@@ -21,7 +21,7 @@ class School
 
   def sort
     new_hash = {}
-    @roster.map do |grade,students|
+    @roster.each do |grade,students|
       new_hash[grade] = students.sort
     end
     new_hash
